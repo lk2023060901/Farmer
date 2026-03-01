@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.27",
+  "importer": "image",
+  "imported": true,
+  "uuid": "4f6a9361-5d07-411c-b8f3-a5663339ef9d",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "4f6a9361-5d07-411c-b8f3-a5663339ef9d@6c48a",
+      "displayName": "Soldier-Shadow_death",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "4f6a9361-5d07-411c-b8f3-a5663339ef9d",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "4f6a9361-5d07-411c-b8f3-a5663339ef9d@f9941",
+      "displayName": "Soldier-Shadow_death",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 5.5,
+        "offsetY": -7.5,
+        "trimX": 43,
+        "trimY": 55,
+        "width": 325,
+        "height": 5,
+        "rawWidth": 400,
+        "rawHeight": 100,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -162.5,
+            -2.5,
+            0,
+            162.5,
+            -2.5,
+            0,
+            -162.5,
+            2.5,
+            0,
+            162.5,
+            2.5,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            43,
+            45,
+            368,
+            45,
+            43,
+            40,
+            368,
+            40
+          ],
+          "nuv": [
+            0.1075,
+            0.4,
+            0.92,
+            0.4,
+            0.1075,
+            0.45,
+            0.92,
+            0.45
+          ],
+          "minPos": [
+            -162.5,
+            -2.5,
+            0
+          ],
+          "maxPos": [
+            162.5,
+            2.5,
+            0
+          ]
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "4f6a9361-5d07-411c-b8f3-a5663339ef9d@6c48a",
+        "atlasUuid": "",
+        "trimType": "auto"
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "fixAlphaTransparencyArtifacts": false,
+    "hasAlpha": true,
+    "redirect": "4f6a9361-5d07-411c-b8f3-a5663339ef9d@6c48a"
+  }
+}

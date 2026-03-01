@@ -1,0 +1,35 @@
+# Go — compiled binaries
+server/bin/
+server/vendor/
+server/server
+*.exe
+
+# Node
+client/node_modules/
+client/.taro/
+client/dist/
+
+# Env
+.env
+*.local
+
+# Generated Swagger docs
+server/docs/swagger/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Logs
+logs/
+
+# Playwright test output
+.playwright-mcp/
+game-*.png
+
+# Cocos Creator (root-level screenshots are design refs, kept)

@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.27",
+  "importer": "image",
+  "imported": true,
+  "uuid": "ddf0f6a0-7ced-4d74-82cc-d9c0b51713a1",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "ddf0f6a0-7ced-4d74-82cc-d9c0b51713a1@6c48a",
+      "displayName": "Soldier-Hurt",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "ddf0f6a0-7ced-4d74-82cc-d9c0b51713a1",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "ddf0f6a0-7ced-4d74-82cc-d9c0b51713a1@f9941",
+      "displayName": "Soldier-Hurt",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -2,
+        "offsetY": 2,
+        "trimX": 40,
+        "trimY": 39,
+        "width": 316,
+        "height": 18,
+        "rawWidth": 400,
+        "rawHeight": 100,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -158,
+            -9,
+            0,
+            158,
+            -9,
+            0,
+            -158,
+            9,
+            0,
+            158,
+            9,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            40,
+            61,
+            356,
+            61,
+            40,
+            43,
+            356,
+            43
+          ],
+          "nuv": [
+            0.1,
+            0.43,
+            0.89,
+            0.43,
+            0.1,
+            0.61,
+            0.89,
+            0.61
+          ],
+          "minPos": [
+            -158,
+            -9,
+            0
+          ],
+          "maxPos": [
+            158,
+            9,
+            0
+          ]
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "ddf0f6a0-7ced-4d74-82cc-d9c0b51713a1@6c48a",
+        "atlasUuid": "",
+        "trimType": "auto"
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "fixAlphaTransparencyArtifacts": false,
+    "hasAlpha": true,
+    "redirect": "ddf0f6a0-7ced-4d74-82cc-d9c0b51713a1@6c48a"
+  }
+}

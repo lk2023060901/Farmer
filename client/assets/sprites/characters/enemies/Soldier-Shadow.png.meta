@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.27",
+  "importer": "image",
+  "imported": true,
+  "uuid": "95dbbb01-5c63-4e1e-8100-ec08e433f4c0",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "95dbbb01-5c63-4e1e-8100-ec08e433f4c0@6c48a",
+      "displayName": "Soldier-Shadow",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "95dbbb01-5c63-4e1e-8100-ec08e433f4c0",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "95dbbb01-5c63-4e1e-8100-ec08e433f4c0@f9941",
+      "displayName": "Soldier-Shadow",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0.5,
+        "offsetY": -7.5,
+        "trimX": 43,
+        "trimY": 55,
+        "width": 15,
+        "height": 5,
+        "rawWidth": 100,
+        "rawHeight": 100,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -7.5,
+            -2.5,
+            0,
+            7.5,
+            -2.5,
+            0,
+            -7.5,
+            2.5,
+            0,
+            7.5,
+            2.5,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            43,
+            45,
+            58,
+            45,
+            43,
+            40,
+            58,
+            40
+          ],
+          "nuv": [
+            0.43,
+            0.4,
+            0.58,
+            0.4,
+            0.43,
+            0.45,
+            0.58,
+            0.45
+          ],
+          "minPos": [
+            -7.5,
+            -2.5,
+            0
+          ],
+          "maxPos": [
+            7.5,
+            2.5,
+            0
+          ]
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "95dbbb01-5c63-4e1e-8100-ec08e433f4c0@6c48a",
+        "atlasUuid": "",
+        "trimType": "auto"
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "fixAlphaTransparencyArtifacts": false,
+    "hasAlpha": true,
+    "redirect": "95dbbb01-5c63-4e1e-8100-ec08e433f4c0@6c48a"
+  }
+}

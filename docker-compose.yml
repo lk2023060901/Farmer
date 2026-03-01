@@ -1,0 +1,117 @@
+version: '3.9'
+
+# ── 农趣村 — Docker Compose stack ───────────────────────────────────────────
+# Dev:        docker compose up -d postgres redis
+# Full stack: docker compose --profile full up -d
+# Monitoring: docker compose --profile monitoring up -d
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+  # ── Databases ──────────────────────────────────────────────────────────────
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: farmer_dev
+      POSTGRES_USER: farmer
+      POSTGRES_PASSWORD: farmer_secret
+    ports:
+      - "5433:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U farmer -d farmer_dev"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+
+  # ── Application server (full-stack profile) ────────────────────────────────
+  server:
+    profiles: ["full"]
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "9080:9080"
+    environment:
+      SERVER_PORT: "9080"
+      SERVER_MODE: release
+      DATABASE_DSN: postgres://farmer:farmer_secret@postgres:5432/farmer_dev?sslmode=disable
+      REDIS_ADDR: redis:6379
+      JWT_SECRET: ${JWT_SECRET:-change-me-in-production}
+      JWT_EXPIRES_HOURS: "168"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:9080/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  # ── Monitoring stack ───────────────────────────────────────────────────────
+  prometheus:
+    profiles: ["monitoring"]
+    image: prom/prometheus:v2.50.1
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./deploy/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention.time=15d'
+      - '--web.enable-lifecycle'
+    restart: unless-stopped
+
+  grafana:
+    profiles: ["monitoring"]
+    image: grafana/grafana:10.3.3
+    ports:
+      - "3001:3000"
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:-admin}
+      GF_USERS_ALLOW_SIGN_UP: "false"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./deploy/grafana/provisioning:/etc/grafana/provisioning:ro
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+
+  loki:
+    profiles: ["monitoring"]
+    image: grafana/loki:2.9.4
+    ports:
+      - "3100:3100"
+    volumes:
+      - loki_data:/loki
+      - ./deploy/loki/loki.yml:/etc/loki/local-config.yaml:ro
+    command: -config.file=/etc/loki/local-config.yaml
+    restart: unless-stopped
+
+volumes:
+  pg_data:
+  redis_data:
+  prometheus_data:
+  grafana_data:
+  loki_data:

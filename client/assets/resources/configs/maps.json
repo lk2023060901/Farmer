@@ -1,0 +1,14 @@
+{
+  "maps": [
+    {
+      "id": "world",
+      "name": "农趣村",
+      "tmx": "maps/world",
+      "tile_w": 16,
+      "tile_h": 16,
+      "width_tiles": 128,
+      "height_tiles": 128,
+      "spawn": { "tile_x": 10, "tile_y": 10 }
+    }
+  ]
+}

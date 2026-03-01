@@ -1,0 +1,143 @@
+{
+  "items": [
+
+    // ══════════════════════════════════════════════════════════════════
+    // seed / 种子
+    // ══════════════════════════════════════════════════════════════════
+
+    // crop
+    { "id": "seed_wheat",        "name": "小麦种子",     "category": "seed", "sub_category": "crop",   "icon": "seed_wheat",           "description": "产出小麦，生长周期短，适合新手",     "stack_limit": 99, "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 10  },
+    { "id": "seed_corn",         "name": "玉米种子",     "category": "seed", "sub_category": "crop",   "icon": "seed_corn",            "description": "产出玉米，产量高",                   "stack_limit": 99, "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 15  },
+    { "id": "seed_carrot",       "name": "胡萝卜种子",   "category": "seed", "sub_category": "crop",   "icon": "seed_carrot",          "description": "产出胡萝卜，秋季加成",               "stack_limit": 99, "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 12  },
+    { "id": "seed_tomato",       "name": "番茄种子",     "category": "seed", "sub_category": "crop",   "icon": "seed_tomato",          "description": "产出番茄，夏季加成",                 "stack_limit": 99, "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 18  },
+    { "id": "seed_strawberry",   "name": "草莓种子",     "category": "seed", "sub_category": "crop",   "icon": "seed_strawberry",      "description": "产出草莓，春季加成，价值高",         "stack_limit": 99, "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 30  },
+    { "id": "seed_pumpkin",      "name": "南瓜种子",     "category": "seed", "sub_category": "crop",   "icon": "seed_pumpkin",         "description": "产出南瓜，秋季限定",                 "stack_limit": 99, "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 25  },
+    { "id": "seed_watermelon",   "name": "西瓜种子",     "category": "seed", "sub_category": "crop",   "icon": "seed_watermelon",      "description": "产出西瓜，夏季限定，体积大",         "stack_limit": 99, "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 28  },
+    { "id": "seed_eggplant",     "name": "茄子种子",     "category": "seed", "sub_category": "crop",   "icon": "seed_eggplant",        "description": "产出茄子，可多次收获",               "stack_limit": 99, "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 16  },
+
+    // flower
+    { "id": "seed_rose",         "name": "玫瑰种子",     "category": "seed", "sub_category": "flower", "icon": "seed_rose",            "description": "产出玫瑰，可制作花束或赠送",         "stack_limit": 99, "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 20  },
+    { "id": "seed_sunflower",    "name": "向日葵种子",   "category": "seed", "sub_category": "flower", "icon": "seed_sunflower",       "description": "产出向日葵，阳光系礼物原料",         "stack_limit": 99, "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 22  },
+
+    // tree
+    { "id": "seed_apple_tree",   "name": "苹果树苗",     "category": "seed", "sub_category": "tree",   "icon": "seed_apple_tree",      "description": "种下后每季收获苹果，无需重种",       "stack_limit": 10, "tradeable": false, "sellable": false, "sell_price": 0,  "buy_price": 200 },
+    { "id": "seed_peach_tree",   "name": "桃树苗",       "category": "seed", "sub_category": "tree",   "icon": "seed_peach_tree",      "description": "种下后每季收获桃子，夏季加成",       "stack_limit": 10, "tradeable": false, "sellable": false, "sell_price": 0,  "buy_price": 180 },
+    { "id": "seed_orange_tree",  "name": "橙树苗",       "category": "seed", "sub_category": "tree",   "icon": "seed_orange_tree",     "description": "种下后每季收获橙子",                 "stack_limit": 10, "tradeable": false, "sellable": false, "sell_price": 0,  "buy_price": 160 },
+
+    // ══════════════════════════════════════════════════════════════════
+    // produce / 农产品
+    // ══════════════════════════════════════════════════════════════════
+
+    // grain
+    { "id": "wheat",             "name": "小麦",         "category": "produce", "sub_category": "grain",     "icon": "wheat",                "description": "基础粮食，可加工为面包或糕点",       "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 8,   "buy_price": 0   },
+    { "id": "corn",              "name": "玉米",         "category": "produce", "sub_category": "grain",     "icon": "vegetable_corn",       "description": "通用粮食，可直接售卖或加工",         "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 12,  "buy_price": 0   },
+
+    // vegetable
+    { "id": "carrot",            "name": "胡萝卜",       "category": "produce", "sub_category": "vegetable", "icon": "vegetable_carrot",     "description": "营养蔬菜，可售卖或加工",             "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 10,  "buy_price": 0   },
+    { "id": "tomato",            "name": "番茄",         "category": "produce", "sub_category": "vegetable", "icon": "vegetable_tomato",     "description": "多用途蔬菜，加工价值高",             "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 15,  "buy_price": 0   },
+    { "id": "pumpkin",           "name": "南瓜",         "category": "produce", "sub_category": "vegetable", "icon": "vegetable_pumpkin",    "description": "秋季限定蔬菜，售价高",               "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 22,  "buy_price": 0   },
+    { "id": "eggplant",          "name": "茄子",         "category": "produce", "sub_category": "vegetable", "icon": "vegetable_eggplant",   "description": "可多次收获的蔬菜",                   "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 14,  "buy_price": 0   },
+
+    // fruit
+    { "id": "strawberry",        "name": "草莓",         "category": "produce", "sub_category": "fruit",     "icon": "fruit_strawberry",     "description": "高价值水果，春季产量翻倍",           "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 28,  "buy_price": 0   },
+    { "id": "watermelon",        "name": "西瓜",         "category": "produce", "sub_category": "fruit",     "icon": "fruit_watermelon",     "description": "夏季限定，清凉消暑，体积大",         "stack_limit": 99,  "tradeable": true,  "sellable": true,  "sell_price": 35,  "buy_price": 0   },
+    { "id": "apple",             "name": "苹果",         "category": "produce", "sub_category": "fruit",     "icon": "fruit_apple",          "description": "果树产出，可直售或加工为果汁",       "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 20,  "buy_price": 0   },
+    { "id": "peach",             "name": "桃子",         "category": "produce", "sub_category": "fruit",     "icon": "fruit_peach",          "description": "夏季水果，加工为蜜桃饮料售价高",     "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 18,  "buy_price": 0   },
+    { "id": "orange",            "name": "橙子",         "category": "produce", "sub_category": "fruit",     "icon": "fruit_orange",         "description": "果树产出，可加工为橙汁",             "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 16,  "buy_price": 0   },
+
+    // flower
+    { "id": "rose",              "name": "玫瑰",         "category": "produce", "sub_category": "flower",    "icon": "rose",                 "description": "浪漫礼物原料，可加工为花束",         "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 18,  "buy_price": 0   },
+    { "id": "sunflower",         "name": "向日葵",       "category": "produce", "sub_category": "flower",    "icon": "sunflower",            "description": "阳光系礼物原料",                     "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 16,  "buy_price": 0   },
+
+    // ══════════════════════════════════════════════════════════════════
+    // processed / 加工品
+    // ══════════════════════════════════════════════════════════════════
+
+    // food
+    { "id": "bread",             "name": "面包",         "category": "processed", "sub_category": "food",     "icon": "pastry_bread",         "description": "小麦加工，售价是原材料3倍",          "stack_limit": 99, "tradeable": true,  "sellable": true,  "sell_price": 45,  "buy_price": 0   },
+    { "id": "croissant",         "name": "可颂",         "category": "processed", "sub_category": "food",     "icon": "pastry_croissant",     "description": "小麦精制加工，高档糕点",             "stack_limit": 99, "tradeable": true,  "sellable": true,  "sell_price": 65,  "buy_price": 0   },
+    { "id": "pumpkin_pie",       "name": "南瓜派",       "category": "processed", "sub_category": "food",     "icon": "cake_cheese",          "description": "南瓜加工，秋季限定高价品",           "stack_limit": 99, "tradeable": true,  "sellable": true,  "sell_price": 90,  "buy_price": 0   },
+    { "id": "cake_strawberry",   "name": "草莓蛋糕",     "category": "processed", "sub_category": "food",     "icon": "cake_strawberry",      "description": "草莓精制甜点，稀有礼物",             "stack_limit": 99, "tradeable": true,  "sellable": true,  "sell_price": 120, "buy_price": 0   },
+
+    // jam
+    { "id": "jam_strawberry",    "name": "草莓果酱",     "category": "processed", "sub_category": "food",     "icon": "jam_strawberry",       "description": "草莓加工，高价礼物",                 "stack_limit": 99, "tradeable": true,  "sellable": true,  "sell_price": 80,  "buy_price": 0   },
+    { "id": "jam_peach",         "name": "蜜桃果酱",     "category": "processed", "sub_category": "food",     "icon": "jam_peach",            "description": "桃子加工，清甜可口",                 "stack_limit": 99, "tradeable": true,  "sellable": true,  "sell_price": 72,  "buy_price": 0   },
+
+    // beverage
+    { "id": "apple_juice",       "name": "苹果汁",       "category": "processed", "sub_category": "beverage", "icon": "soymilk_almond",       "description": "苹果加工，清爽饮料",                 "stack_limit": 99, "tradeable": true,  "sellable": true,  "sell_price": 55,  "buy_price": 0   },
+    { "id": "peach_tea",         "name": "蜜桃茶",       "category": "processed", "sub_category": "beverage", "icon": "soymilk_peach",        "description": "桃子加工，夏季人气商品",             "stack_limit": 99, "tradeable": true,  "sellable": true,  "sell_price": 65,  "buy_price": 0   },
+    { "id": "strawberry_milk",   "name": "草莓奶昔",     "category": "processed", "sub_category": "beverage", "icon": "soymilk_strawberry",   "description": "草莓加工，人气饮品",                 "stack_limit": 99, "tradeable": true,  "sellable": true,  "sell_price": 70,  "buy_price": 0   },
+
+    // craft
+    { "id": "flower_bouquet",    "name": "花束",         "category": "processed", "sub_category": "craft",    "icon": "flower_bouquet",       "description": "花卉加工，高好感度礼物",             "stack_limit": 99, "tradeable": true,  "sellable": true,  "sell_price": 70,  "buy_price": 0   },
+
+    // ══════════════════════════════════════════════════════════════════
+    // tool / 工具
+    // ══════════════════════════════════════════════════════════════════
+
+    { "id": "tool_hoe",          "name": "锄头",         "category": "tool", "sub_category": "farming",  "icon": "tool_hoe",             "description": "翻土工具，耕作必备，不可叠加",       "stack_limit": 1,  "tradeable": false, "sellable": false, "sell_price": 0,  "buy_price": 50  },
+    { "id": "tool_watering",     "name": "浇水壶",       "category": "tool", "sub_category": "farming",  "icon": "tool_watering",        "description": "浇水工具，加速作物生长，不可叠加",   "stack_limit": 1,  "tradeable": false, "sellable": false, "sell_price": 0,  "buy_price": 50  },
+    { "id": "tool_fertilizer",   "name": "化肥",         "category": "tool", "sub_category": "farming",  "icon": "tool_fertilizer",      "description": "一次性使用，提升作物品质",           "stack_limit": 99, "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 30  },
+    { "id": "tool_fishing_rod",  "name": "钓鱼竿",       "category": "tool", "sub_category": "fishing",  "icon": "tool_fishing_rod",     "description": "探索关卡中用于钓鱼，不可叠加",       "stack_limit": 1,  "tradeable": false, "sellable": false, "sell_price": 0,  "buy_price": 120 },
+
+    // ══════════════════════════════════════════════════════════════════
+    // material / 材料
+    // ══════════════════════════════════════════════════════════════════
+
+    { "id": "wood",              "name": "木材",         "category": "material", "sub_category": "raw",     "icon": "wood",                 "description": "建筑升级原料，探索关卡掉落",         "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 5,  "buy_price": 8   },
+    { "id": "stone",             "name": "石头",         "category": "material", "sub_category": "raw",     "icon": "stone",                "description": "建筑升级原料，探索关卡掉落",         "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 4,  "buy_price": 7   },
+    { "id": "fiber",             "name": "植物纤维",     "category": "material", "sub_category": "raw",     "icon": "fiber",                "description": "加工精炼原料，草地或森林掉落",       "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 3,  "buy_price": 5   },
+    { "id": "plank",             "name": "木板",         "category": "material", "sub_category": "refined", "icon": "plank",                "description": "木材精炼，高级建筑原料",             "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 12, "buy_price": 20  },
+    { "id": "brick",             "name": "砖块",         "category": "material", "sub_category": "refined", "icon": "brick",                "description": "石头精炼，高级建筑原料",             "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 10, "buy_price": 18  },
+
+    // ══════════════════════════════════════════════════════════════════
+    // gift / 礼物
+    // ══════════════════════════════════════════════════════════════════
+
+    { "id": "gift_common",       "name": "普通礼盒",     "category": "gift", "sub_category": "common",  "icon": "gift_common",          "description": "赠送后提升少量好感度",               "stack_limit": 99, "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 50  },
+    { "id": "gift_rare",         "name": "精致礼盒",     "category": "gift", "sub_category": "rare",    "icon": "gift_rare",            "description": "赠送后大幅提升好感度",               "stack_limit": 99, "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 200 },
+
+    // ══════════════════════════════════════════════════════════════════
+    // special / 特殊道具（活动/副本）
+    // ══════════════════════════════════════════════════════════════════
+
+    { "id": "event_token",       "name": "活动代币",     "category": "special", "sub_category": "event",    "icon": "event_token",          "description": "活动期间获得，限时兑换奖励",         "stack_limit": 999, "tradeable": false, "sellable": false, "sell_price": 0,  "buy_price": 0   },
+    { "id": "exchange_voucher",  "name": "兑换券",       "category": "special", "sub_category": "currency", "icon": "exchange_voucher",     "description": "可在友情商店兑换特殊道具",           "stack_limit": 999, "tradeable": false, "sellable": false, "sell_price": 0,  "buy_price": 0   },
+    { "id": "mystery_bottle",    "name": "神秘药水",     "category": "special", "sub_category": "event",    "icon": "bottles",              "description": "副本掉落，效果随机，稀有道具",       "stack_limit": 10,  "tradeable": true,  "sellable": true,  "sell_price": 150,"buy_price": 0   },
+
+    // ══════════════════════════════════════════════════════════════════
+    // key / 钥匙（开启宝箱或副本入口）
+    // ══════════════════════════════════════════════════════════════════
+
+    { "id": "key_bronze",        "name": "铜钥匙",       "category": "special", "sub_category": "key",      "icon": "coin_003",             "description": "开启木制宝箱或普通副本入口",         "stack_limit": 10,  "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 30  },
+    { "id": "key_silver",        "name": "银钥匙",       "category": "special", "sub_category": "key",      "icon": "coin_008",             "description": "开启铁制宝箱或精英副本入口",         "stack_limit": 10,  "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 80  },
+    { "id": "key_gold",          "name": "金钥匙",       "category": "special", "sub_category": "key",      "icon": "coin_015",             "description": "开启黄金宝箱或 Boss 副本入口，稀有", "stack_limit": 5,   "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 200 },
+
+    // ══════════════════════════════════════════════════════════════════
+    // coin / 金币道具（副本掉落的实体金币，拾取后转为货币）
+    // ══════════════════════════════════════════════════════════════════
+
+    { "id": "coin_copper",       "name": "铜币",         "category": "special", "sub_category": "currency", "icon": "coin_001",             "description": "副本掉落，拾取后转为少量金币(+5)",   "stack_limit": 999, "tradeable": false, "sellable": false, "sell_price": 5,  "buy_price": 0   },
+    { "id": "coin_silver",       "name": "银币",         "category": "special", "sub_category": "currency", "icon": "coin_006",             "description": "副本掉落，拾取后转为金币(+20)",      "stack_limit": 999, "tradeable": false, "sellable": false, "sell_price": 20, "buy_price": 0   },
+    { "id": "coin_gold",         "name": "金币",         "category": "special", "sub_category": "currency", "icon": "coin_011",             "description": "副本掉落，拾取后转为金币(+100)",     "stack_limit": 999, "tradeable": false, "sellable": false, "sell_price": 100,"buy_price": 0   },
+    { "id": "coin_pouch",        "name": "金币袋",       "category": "special", "sub_category": "currency", "icon": "coin_016",             "description": "使用后随机获得 50~500 金币",         "stack_limit": 99,  "tradeable": true,  "sellable": false, "sell_price": 0,  "buy_price": 0   },
+
+    // ══════════════════════════════════════════════════════════════════
+    // gem / 宝石（副本掉落，可售卖或合成高级道具）
+    // ══════════════════════════════════════════════════════════════════
+
+    { "id": "gem_blue_small",    "name": "蓝宝石碎片",   "category": "material", "sub_category": "gem",      "icon": "gem_blue_001",         "description": "副本掉落，3 块可合成蓝宝石",         "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 30, "buy_price": 0   },
+    { "id": "gem_blue",          "name": "蓝宝石",       "category": "material", "sub_category": "gem",      "icon": "gem_blue_010",         "description": "稀有宝石，可售卖或用于高级合成",     "stack_limit": 99,  "tradeable": true,  "sellable": true,  "sell_price": 100,"buy_price": 0   },
+    { "id": "gem_green_small",   "name": "翠玉碎片",     "category": "material", "sub_category": "gem",      "icon": "gem_green_001",        "description": "副本掉落，3 块可合成翠玉",           "stack_limit": 999, "tradeable": true,  "sellable": true,  "sell_price": 25, "buy_price": 0   },
+    { "id": "gem_green",         "name": "翠玉",         "category": "material", "sub_category": "gem",      "icon": "gem_green_010",        "description": "稀有宝石，可售卖或用于高级合成",     "stack_limit": 99,  "tradeable": true,  "sellable": true,  "sell_price": 90, "buy_price": 0   },
+
+    // ══════════════════════════════════════════════════════════════════
+    // chest / 宝箱（副本奖励，开启后获得随机物品）
+    // ══════════════════════════════════════════════════════════════════
+
+    { "id": "chest_wood",        "name": "木制宝箱",     "category": "special", "sub_category": "chest",    "icon": "chest_001",            "description": "副本普通奖励箱，需铜钥匙开启",       "stack_limit": 99,  "tradeable": false, "sellable": false, "sell_price": 0,  "buy_price": 0   },
+    { "id": "chest_iron",        "name": "铁制宝箱",     "category": "special", "sub_category": "chest",    "icon": "chest_020",            "description": "副本精英奖励箱，需银钥匙开启",       "stack_limit": 99,  "tradeable": false, "sellable": false, "sell_price": 0,  "buy_price": 0   },
+    { "id": "chest_gold",        "name": "黄金宝箱",     "category": "special", "sub_category": "chest",    "icon": "chest_040",            "description": "副本 Boss 奖励箱，需金钥匙开启",     "stack_limit": 99,  "tradeable": false, "sellable": false, "sell_price": 0,  "buy_price": 0   }
+
+  ]
+}
